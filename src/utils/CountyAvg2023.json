@@ -1,0 +1,458 @@
+[
+  {
+    "COUNTY :": "BATH AND NORTH EAST SOMERSET",
+    "Price:": 522687.7547
+  },
+  {
+    "COUNTY :": "BEDFORD",
+    "Price:": 396833.3512
+  },
+  {
+    "COUNTY :": "BLACKBURN WITH DARWEN",
+    "Price:": 161691.527
+  },
+  {
+    "COUNTY :": "BLACKPOOL",
+    "Price:": 138383.0843
+  },
+  {
+    "COUNTY :": "BLAENAU GWENT",
+    "Price:": 141446.5671
+  },
+  {
+    "COUNTY :": "BOURNEMOUTH, CHRISTCHURCH AND POOLE",
+    "Price:": 423704.7531
+  },
+  {
+    "COUNTY :": "BRACKNELL FOREST",
+    "Price:": 548773.8667
+  },
+  {
+    "COUNTY :": "BRIDGEND",
+    "Price:": 214211.2
+  },
+  {
+    "COUNTY :": "BRIGHTON AND HOVE",
+    "Price:": 521369.8469
+  },
+  {
+    "COUNTY :": "BUCKINGHAMSHIRE",
+    "Price:": 573929.5033
+  },
+  {
+    "COUNTY :": "CAERPHILLY",
+    "Price:": 187193.839
+  },
+  {
+    "COUNTY :": "CAMBRIDGESHIRE",
+    "Price:": 438887.6118
+  },
+  {
+    "COUNTY :": "CARDIFF",
+    "Price:": 317531.2572
+  },
+  {
+    "COUNTY :": "CARMARTHENSHIRE",
+    "Price:": 214329.2069
+  },
+  {
+    "COUNTY :": "CENTRAL BEDFORDSHIRE",
+    "Price:": 386664.1698
+  },
+  {
+    "COUNTY :": "CEREDIGION",
+    "Price:": 275025.9983
+  },
+  {
+    "COUNTY :": "CHESHIRE EAST",
+    "Price:": 347706.1488
+  },
+  {
+    "COUNTY :": "CHESHIRE WEST AND CHESTER",
+    "Price:": 295503.3916
+  },
+  {
+    "COUNTY :": "CITY OF BRISTOL",
+    "Price:": 456292.9779
+  },
+  {
+    "COUNTY :": "CITY OF DERBY",
+    "Price:": 240743.7745
+  },
+  {
+    "COUNTY :": "CITY OF KINGSTON UPON HULL",
+    "Price:": 137130.7701
+  },
+  {
+    "COUNTY :": "CITY OF NOTTINGHAM",
+    "Price:": 265163.7386
+  },
+  {
+    "COUNTY :": "CITY OF PETERBOROUGH",
+    "Price:": 297121.9847
+  },
+  {
+    "COUNTY :": "CITY OF PLYMOUTH",
+    "Price:": 240348.268
+  },
+  {
+    "COUNTY :": "CONWY",
+    "Price:": 235395.7882
+  },
+  {
+    "COUNTY :": "CORNWALL",
+    "Price:": 378203.5938
+  },
+  {
+    "COUNTY :": "COUNTY DURHAM",
+    "Price:": 145950.9443
+  },
+  {
+    "COUNTY :": "CUMBERLAND",
+    "Price:": 191969.3608
+  },
+  {
+    "COUNTY :": "CUMBRIA",
+    "Price:": 219889.2642
+  },
+  {
+    "COUNTY :": "DARLINGTON",
+    "Price:": 164807.8129
+  },
+  {
+    "COUNTY :": "DENBIGHSHIRE",
+    "Price:": 213604.9479
+  },
+  {
+    "COUNTY :": "DERBYSHIRE",
+    "Price:": 260130.2372
+  },
+  {
+    "COUNTY :": "DEVON",
+    "Price:": 384414.3696
+  },
+  {
+    "COUNTY :": "DORSET",
+    "Price:": 425612.6959
+  },
+  {
+    "COUNTY :": "EAST RIDING OF YORKSHIRE",
+    "Price:": 244773.131
+  },
+  {
+    "COUNTY :": "EAST SUSSEX",
+    "Price:": 402826.0843
+  },
+  {
+    "COUNTY :": "ESSEX",
+    "Price:": 415377.5156
+  },
+  {
+    "COUNTY :": "FLINTSHIRE",
+    "Price:": 231427.884
+  },
+  {
+    "COUNTY :": "GLOUCESTERSHIRE",
+    "Price:": 403538.4601
+  },
+  {
+    "COUNTY :": "GREATER LONDON",
+    "Price:": 784268.499
+  },
+  {
+    "COUNTY :": "GREATER MANCHESTER",
+    "Price:": 260208.1484
+  },
+  {
+    "COUNTY :": "GWYNEDD",
+    "Price:": 254823.1144
+  },
+  {
+    "COUNTY :": "HALTON",
+    "Price:": 191514.154
+  },
+  {
+    "COUNTY :": "HAMPSHIRE",
+    "Price:": 444711.3787
+  },
+  {
+    "COUNTY :": "HARTLEPOOL",
+    "Price:": 138109.6283
+  },
+  {
+    "COUNTY :": "HEREFORDSHIRE",
+    "Price:": 371410.3729
+  },
+  {
+    "COUNTY :": "HERTFORDSHIRE",
+    "Price:": 564262.0232
+  },
+  {
+    "COUNTY :": "ISLE OF ANGLESEY",
+    "Price:": 328118.5719
+  },
+  {
+    "COUNTY :": "ISLE OF WIGHT",
+    "Price:": 315789.9862
+  },
+  {
+    "COUNTY :": "ISLES OF SCILLY",
+    "Price:": 474166.6667
+  },
+  {
+    "COUNTY :": "KENT",
+    "Price:": 419401.519
+  },
+  {
+    "COUNTY :": "LANCASHIRE",
+    "Price:": 215736.2365
+  },
+  {
+    "COUNTY :": "LEICESTER",
+    "Price:": 272758.8999
+  },
+  {
+    "COUNTY :": "LEICESTERSHIRE",
+    "Price:": 316145.88
+  },
+  {
+    "COUNTY :": "LINCOLNSHIRE",
+    "Price:": 257486.1504
+  },
+  {
+    "COUNTY :": "LUTON",
+    "Price:": 311928.8077
+  },
+  {
+    "COUNTY :": "MEDWAY",
+    "Price:": 321454.565
+  },
+  {
+    "COUNTY :": "MERSEYSIDE",
+    "Price:": 221654.1237
+  },
+  {
+    "COUNTY :": "MERTHYR TYDFIL",
+    "Price:": 151856.0956
+  },
+  {
+    "COUNTY :": "MIDDLESBROUGH",
+    "Price:": 135374.9391
+  },
+  {
+    "COUNTY :": "MILTON KEYNES",
+    "Price:": 383061.3643
+  },
+  {
+    "COUNTY :": "MONMOUTHSHIRE",
+    "Price:": 363070.5757
+  },
+  {
+    "COUNTY :": "NEATH PORT TALBOT",
+    "Price:": 164257.3243
+  },
+  {
+    "COUNTY :": "NEWPORT",
+    "Price:": 237198.6425
+  },
+  {
+    "COUNTY :": "NORFOLK",
+    "Price:": 311730.2655
+  },
+  {
+    "COUNTY :": "NORTH EAST LINCOLNSHIRE",
+    "Price:": 148804.9272
+  },
+  {
+    "COUNTY :": "NORTH LINCOLNSHIRE",
+    "Price:": 203759.4092
+  },
+  {
+    "COUNTY :": "NORTH NORTHAMPTONSHIRE",
+    "Price:": 296475.5055
+  },
+  {
+    "COUNTY :": "NORTH SOMERSET",
+    "Price:": 369226.1347
+  },
+  {
+    "COUNTY :": "NORTH YORKSHIRE",
+    "Price:": 337076.4385
+  },
+  {
+    "COUNTY :": "NORTHUMBERLAND",
+    "Price:": 254128.3847
+  },
+  {
+    "COUNTY :": "NOTTINGHAMSHIRE",
+    "Price:": 259692.0022
+  },
+  {
+    "COUNTY :": "OXFORDSHIRE",
+    "Price:": 552517.6917
+  },
+  {
+    "COUNTY :": "PEMBROKESHIRE",
+    "Price:": 249554.8624
+  },
+  {
+    "COUNTY :": "PORTSMOUTH",
+    "Price:": 285268.5919
+  },
+  {
+    "COUNTY :": "POWYS",
+    "Price:": 275194.7737
+  },
+  {
+    "COUNTY :": "READING",
+    "Price:": 411248.6923
+  },
+  {
+    "COUNTY :": "REDCAR AND CLEVELAND",
+    "Price:": 167030.7845
+  },
+  {
+    "COUNTY :": "RHONDDA CYNON TAFF",
+    "Price:": 157496.766
+  },
+  {
+    "COUNTY :": "RUTLAND",
+    "Price:": 425017.5978
+  },
+  {
+    "COUNTY :": "SHROPSHIRE",
+    "Price:": 316201.1052
+  },
+  {
+    "COUNTY :": "SLOUGH",
+    "Price:": 744387.3529
+  },
+  {
+    "COUNTY :": "SOMERSET",
+    "Price:": 351465.1919
+  },
+  {
+    "COUNTY :": "SOUTH GLOUCESTERSHIRE",
+    "Price:": 394252.1734
+  },
+  {
+    "COUNTY :": "SOUTH YORKSHIRE",
+    "Price:": 214623.5735
+  },
+  {
+    "COUNTY :": "SOUTHAMPTON",
+    "Price:": 294854.3218
+  },
+  {
+    "COUNTY :": "SOUTHEND-ON-SEA",
+    "Price:": 372483.7508
+  },
+  {
+    "COUNTY :": "STAFFORDSHIRE",
+    "Price:": 267586.6535
+  },
+  {
+    "COUNTY :": "STOCKTON-ON-TEES",
+    "Price:": 181568.8191
+  },
+  {
+    "COUNTY :": "STOKE-ON-TRENT",
+    "Price:": 142263.5176
+  },
+  {
+    "COUNTY :": "SUFFOLK",
+    "Price:": 337002.8512
+  },
+  {
+    "COUNTY :": "SURREY",
+    "Price:": 685136.2427
+  },
+  {
+    "COUNTY :": "SWANSEA",
+    "Price:": 212089.3555
+  },
+  {
+    "COUNTY :": "SWINDON",
+    "Price:": 315916.7521
+  },
+  {
+    "COUNTY :": "THE VALE OF GLAMORGAN",
+    "Price:": 336200.0609
+  },
+  {
+    "COUNTY :": "THURROCK",
+    "Price:": 424012.3857
+  },
+  {
+    "COUNTY :": "TORBAY",
+    "Price:": 292484.2624
+  },
+  {
+    "COUNTY :": "TORFAEN",
+    "Price:": 198869.5402
+  },
+  {
+    "COUNTY :": "TYNE AND WEAR",
+    "Price:": 208095.8225
+  },
+  {
+    "COUNTY :": "WARRINGTON",
+    "Price:": 303562.4806
+  },
+  {
+    "COUNTY :": "WARWICKSHIRE",
+    "Price:": 371305.5382
+  },
+  {
+    "COUNTY :": "WEST BERKSHIRE",
+    "Price:": 572048.1945
+  },
+  {
+    "COUNTY :": "WEST MIDLANDS",
+    "Price:": 272710.185
+  },
+  {
+    "COUNTY :": "WEST NORTHAMPTONSHIRE",
+    "Price:": 354655.1362
+  },
+  {
+    "COUNTY :": "WEST SUSSEX",
+    "Price:": 471551.9419
+  },
+  {
+    "COUNTY :": "WEST YORKSHIRE",
+    "Price:": 232117.1632
+  },
+  {
+    "COUNTY :": "WESTMORLAND AND FURNESS",
+    "Price:": 282485.4994
+  },
+  {
+    "COUNTY :": "WILTSHIRE",
+    "Price:": 395987.5551
+  },
+  {
+    "COUNTY :": "WINDSOR AND MAIDENHEAD",
+    "Price:": 682705.682
+  },
+  {
+    "COUNTY :": "WOKINGHAM",
+    "Price:": 546356.1511
+  },
+  {
+    "COUNTY :": "WORCESTERSHIRE",
+    "Price:": 344526.895
+  },
+  {
+    "COUNTY :": "WREKIN",
+    "Price:": 232307.5973
+  },
+  {
+    "COUNTY :": "WREXHAM",
+    "Price:": 238874.005
+  },
+  {
+    "COUNTY :": "YORK",
+    "Price:": 429591.5612
+  }
+]
