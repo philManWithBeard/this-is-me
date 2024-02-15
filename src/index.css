@@ -14,6 +14,13 @@ justify-content: center;
 max-width: 400px; 
 margin: 0 auto; 
 margin-top: 55px;
+border: solid red;
+
+}
+
+.center-container {
+    
+
 }
   
 h2 {
@@ -25,14 +32,43 @@ margin-bottom: 20px;
   }
   
   .form-control {
- width: 30%; 
+ width: 46%; 
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
   }
   
 
- .btn-primary {
+ /* .btn-primary {
  width: 30%; 
+  } */
+
+  #next-button {
+    background-color: red;
+    border: solid green;
+  
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+
+  }
+
+  .down-row {
+    margin-top: 200px;
+  }
+
+  .header-font {
+    font-family: monospace;
   }
   
+ 
 
 
 

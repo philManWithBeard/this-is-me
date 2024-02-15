@@ -7,9 +7,9 @@ const Header = () => {
     const [currentQuestion, setCurrentQuestion] = useState(1)
   return (
     <>
-    {/* <Navbar className="custom-navbar" variant="dark" fixed="top">
-      <Navbar.Brand className="mx-auto">This-Is-Me</Navbar.Brand>
-    </Navbar>  */}
+      <Navbar className="custom-navbar" variant="dark" fixed="top">
+      <Navbar.Brand className="mx-auto header-font">This-Is-Me</Navbar.Brand>
+    </Navbar>   
    
    
 {currentQuestion=== 1 ? <Q1 setCurrentQuestion={setCurrentQuestion}/> : ""}

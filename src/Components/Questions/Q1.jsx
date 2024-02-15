@@ -14,12 +14,12 @@ const QuestionOne = ({ setCurrentQuestion }) => {
   };
 
   return (
-    <div className="container">
+    <div className="center-container">
         <div className="form-container">
     <h2>Question 1: Lets first input your Postcode</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="postcode">
-          <Form.Label>Postcode</Form.Label>
+          <Form.Label className="text-center">Postcode</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter your postcode"
@@ -27,7 +27,7 @@ const QuestionOne = ({ setCurrentQuestion }) => {
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button className="mx-auto my-2" id="next-button" variant="primary" type="submit">
           Next
         </Button>
       </Form>
