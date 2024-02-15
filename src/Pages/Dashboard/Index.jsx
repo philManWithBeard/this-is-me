@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import API from "../../utils/API";
 import ResultsDetail from "../../Components/resultsDetail/Index.jsx";
+import { DonutDatasetTransition } from "../../Components/Chart/DonutDatasetTransition.tsx";
 import Chart from "../../Components/Chart/Index.jsx";
 import Input from "../../Components/Input/Index.jsx";
 
@@ -41,7 +42,6 @@ function Dashboard(){
         />
         </div>
         <div>
-        <Chart/>
 
         {searchData.results.data ? (
             <ResultsDetail
@@ -50,6 +50,19 @@ function Dashboard(){
             />
         ) : (
             <h3>No Results to Display</h3> 
+        )}
+        {searchData.results.data ? (
+            <Chart
+            county={searchData.results.data.attributes.cty_name}
+            pfa={searchData.results.data.attributes.pfa_name}
+            />
+        ) : (
+            <h3></h3> 
+        )}
+         {searchData.results.data ? (
+          <DonutDatasetTransition width={800} height={300}/>
+          ) : (
+            <h3></h3> 
         )}
         </div>
         </>
