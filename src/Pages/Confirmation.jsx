@@ -3,6 +3,8 @@ import { useAppState } from "../Components/state";
 import { Section, SectionRow } from "../Components/Forms/Section";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
+import Layout from "../Components/Layout/Layout";
+
 
 const Confirmation = () => {
   const [state] = useAppState();
@@ -14,6 +16,7 @@ const Confirmation = () => {
   };
 
   return (
+    <Layout>
     <Form onSubmit={handleSubmit(submitData)}>
       <h1 className="mb-4">Confirm</h1>
       <Section url="/">
@@ -27,6 +30,7 @@ const Confirmation = () => {
         <Button>Submit</Button>
       </div>
     </Form>
+    </Layout>
   );
 };
 
