@@ -6,7 +6,6 @@ import Statistics from "./Pages/Statistics";
 import Who from "./Pages/Who";
 import Life from "./Pages/Life";
 import Scale from "./Pages/Scale";
-import Affect from "./Pages/Affect";
 import Confirmation from "./Pages/Confirmation";
 import ThankYou from "./Pages/ThankYou";
 
@@ -21,7 +20,6 @@ const App = () => {
             <Route path="/who" element={<Who />} />
             <Route path="/life" element={<Life />} />
             <Route path="/scale" element={<Scale />} />
-            <Route path="/affect" element={<Affect />} />
             <Route path="/confirmation" element={<Confirmation />} />
             <Route path="/thank-you" element={<ThankYou />} />
           </Routes>
