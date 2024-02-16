@@ -8,10 +8,37 @@ import { Form } from "../Components/Forms/Form";
 import { Input } from "../Components/Forms/Input";
 
 const Postcode = () => {
+  const [state, setState] = useAppState();
+  const {
+    handleSubmit,
+    register,
+    watch,
+    formState: { errors },
+  } = useForm({ defaultValues: state, mode: "onSubmit" });
+  const watchPassword = watch("password");
+  const navigate = useNavigate();
+
+  const saveData = (data) => {
+    setState({ ...state, ...data });
+    navigate("/statistics");
+  };
+
   return (
-    <>
-      <h2>Postcode</h2>
-    </>
+    <Form onSubmit={handleSubmit(saveData)}>
+      <h2>
+        There's a housing crisis. <br /> Let's show your MP how bad it is.{" "}
+      </h2>
+      <fieldset>
+        <Field label="Postcode" error={errors?.postcode}>
+          <Input
+            {...register("postcode", { required: "Postcode is required" })}
+            type="postcode"
+            id="postcode"
+          />
+        </Field>
+        <Button>Next {">"}</Button>
+      </fieldset>
+    </Form>
   );
 };
 
