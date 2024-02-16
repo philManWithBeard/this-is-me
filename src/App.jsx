@@ -13,18 +13,20 @@ import ThankYou from "./Pages/ThankYou";
 const App = () => {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Postcode />} />
-          <Route path="/statistics" element={<Statistics />} />
-          <Route path="/who" element={<Who />} />
-          <Route path="/life" element={<Life />} />
-          <Route path="/scale" element={<Scale />} />
-          <Route path="/affect" element={<Affect />} />
-          <Route path="/confirmation" element={<Confirmation />} />
-          <Route path="/thank-you" element={<ThankYou />} />
-        </Routes>
-      </Router>
+      <AppProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Postcode />} />
+            <Route path="/statistics" element={<Statistics />} />
+            <Route path="/who" element={<Who />} />
+            <Route path="/life" element={<Life />} />
+            <Route path="/scale" element={<Scale />} />
+            <Route path="/affect" element={<Affect />} />
+            <Route path="/confirmation" element={<Confirmation />} />
+            <Route path="/thank-you" element={<ThankYou />} />
+          </Routes>
+        </Router>
+      </AppProvider>
     </div>
   );
 };
