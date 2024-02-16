@@ -15,7 +15,6 @@ const Postcode = () => {
     watch,
     formState: { errors },
   } = useForm({ defaultValues: state, mode: "onSubmit" });
-  const watchPassword = watch("password");
   const navigate = useNavigate();
 
   const saveData = (data) => {
