@@ -12,10 +12,8 @@ const Who = () => {
   const {
     handleSubmit,
     register,
-    watch,
     formState: { errors },
   } = useForm({ defaultValues: state, mode: "onSubmit" });
-  const watchPassword = watch("password");
   const navigate = useNavigate();
 
   const saveData = (data) => {
@@ -27,6 +25,41 @@ const Who = () => {
     <Form onSubmit={handleSubmit(saveData)}>
       <h2>Who does this issue affect?</h2>
       <fieldset>
+        <input
+          type="checkbox"
+          placeholder="mePersonally"
+          {...register("mePersonally", {})}
+        />
+        <label for="mePersonally">Me Personally</label>
+        <br />
+        <input
+          type="checkbox"
+          placeholder="myChildren"
+          {...register("myChildren", {})}
+        />
+        <label for="myChildren">My Children</label>
+        <br />
+        <input
+          type="checkbox"
+          placeholder="myRelatives"
+          {...register("myRelatives", {})}
+        />
+        <label for="myRelatives">My Relatives</label>
+        <br />
+        <input
+          type="checkbox"
+          placeholder="myFriends"
+          {...register("myFriends", {})}
+        />
+        <label for="myFriends">My friends</label>
+        <br />
+        <input
+          type="checkbox"
+          placeholder="myColleagues"
+          {...register("myColleagues", {})}
+        />
+        <label for="myColleagues">My Colleagues</label>
+        <br />
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>

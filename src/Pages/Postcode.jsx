@@ -12,7 +12,6 @@ const Postcode = () => {
   const {
     handleSubmit,
     register,
-    watch,
     formState: { errors },
   } = useForm({ defaultValues: state, mode: "onSubmit" });
   const navigate = useNavigate();

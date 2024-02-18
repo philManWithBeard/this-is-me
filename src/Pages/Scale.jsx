@@ -27,6 +27,41 @@ const Scale = () => {
     <Form onSubmit={handleSubmit(saveData)}>
       <h2>How much does this issue affect me?</h2>
       <fieldset>
+        <input
+          type="checkbox"
+          placeholder="biggestIssue"
+          {...register("biggestIssue", {})}
+        />
+        <label for="biggestIssue">My biggest issue</label>
+        <br />
+        <input
+          type="checkbox"
+          placeholder="affectLot"
+          {...register("affectLot", {})}
+        />
+        <label for="affectLot">Affects me a lot</label>
+        <br />
+        <input
+          type="checkbox"
+          placeholder="affects"
+          {...register("affects", {})}
+        />
+        <label for="affects">Affects me</label>
+        <br />
+        <input
+          type="checkbox"
+          placeholder="affectLittle"
+          {...register("affectLittle", {})}
+        />
+        <label for="affectLittle">Affects me a little</label>
+        <br />
+        <input
+          type="checkbox"
+          placeholder="doesntAffect"
+          {...register("doesntAffect", {})}
+        />
+        <label for="doesntAffect">Doesn't affect me</label>
+        <br />
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
