@@ -3,6 +3,8 @@ import Footer from "./Footer";
 import Header from "./Header";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap";
+import "../../App.css";
+import "@fontsource-variable/cabin";
 
 const Layout = ({ children }) => {
   return (
