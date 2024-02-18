@@ -6,6 +6,7 @@ import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import { Input } from "../Components/Forms/Input";
+import Question from "../Components/Layout/Question";
 
 const Who = () => {
   const [state, setState] = useAppState();
@@ -23,7 +24,7 @@ const Who = () => {
 
   return (
     <Form onSubmit={handleSubmit(saveData)}>
-      <h2>Who does this issue affect?</h2>
+      <Question>Who does this issue affect?</Question>
       <fieldset>
         <input
           type="checkbox"

@@ -6,6 +6,7 @@ import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import { Input } from "../Components/Forms/Input";
+import Question from "../Components/Layout/Question";
 
 const Scale = () => {
   const [state, setState] = useAppState();
@@ -25,7 +26,7 @@ const Scale = () => {
 
   return (
     <Form onSubmit={handleSubmit(saveData)}>
-      <h2>How much does this issue affect me?</h2>
+      <Question>How much does this issue affect me?</Question>
       <fieldset>
         <input
           type="checkbox"

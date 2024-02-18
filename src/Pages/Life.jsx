@@ -6,6 +6,7 @@ import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import { Input } from "../Components/Forms/Input";
+import Question from "../Components/Layout/Question";
 
 const Life = () => {
   const [state, setState] = useAppState();
@@ -25,7 +26,7 @@ const Life = () => {
 
   return (
     <Form onSubmit={handleSubmit(saveData)}>
-      <h2>What does this affect?</h2>
+      <Question>What does this affect?</Question>
       <fieldset>
         <input
           type="checkbox"
