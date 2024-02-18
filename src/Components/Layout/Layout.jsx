@@ -10,7 +10,11 @@ const Layout = ({ children }) => {
   return (
     <div className="vh-100 d-flex flex-column justify-content-between">
       <Header />
-      {children}
+      <main className="container border-0 col-8 py-5">
+        <div className="row align-items-center justify-content-center">
+          {children}
+        </div>
+      </main>
       <Footer />
     </div>
   );
