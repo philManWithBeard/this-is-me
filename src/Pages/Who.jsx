@@ -6,6 +6,7 @@ import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import { Input } from "../Components/Forms/Input";
+import beForm from "react-bootstrap/Form";
 
 const Who = () => {
   const [state, setState] = useAppState();
@@ -27,6 +28,17 @@ const Who = () => {
     <Form onSubmit={handleSubmit(saveData)}>
       <h2>Who does this issue affect?</h2>
       <fieldset>
+        {["My Physical Health", "My Mental Health", "My ability to afford essentials", "My ability to afford non-essentials"].map(
+          (answer, index) => (
+            <div key={`default-${index}`} className="mb-3">
+              <beForm.Check // prettier-ignore
+                type="radio"
+                id={`default-${index}`}
+                label={answer}
+              />
+            </div>
+          )
+        )}
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
