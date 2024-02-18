@@ -21,7 +21,7 @@ const Confirmation = () => {
         <p>Dear *insert MP*,</p>
         <p>I am one of your constituents, my postcode is {state.postcode}.</p>
       </Section>
-      <Section>
+      <Section url="/who">
         <p>The high cost of housing affects: </p>
         <ul>
           {state.mePersonally ? <li>Me personally</li> : ""}
@@ -31,7 +31,7 @@ const Confirmation = () => {
           {state.mePersonally ? <li>My colleagues</li> : ""}.
         </ul>
       </Section>
-      <Section>
+      <Section url="/life">
         <p>This has an impact on my:</p>
         <ul>
           {state.mentalHealth ? <li>Mental health</li> : ""}
@@ -51,7 +51,7 @@ const Confirmation = () => {
           )}
         </ul>
       </Section>
-      <Section>
+      <Section url="/scale">
         <p>
           This issue
           {state.biggest ? "is my biggest issue" : ""}
