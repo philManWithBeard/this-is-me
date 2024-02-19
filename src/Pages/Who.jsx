@@ -25,42 +25,61 @@ const Who = () => {
   return (
     <Form onSubmit={handleSubmit(saveData)}>
       <Question>Who does this issue affect?</Question>
-      <fieldset>
+      <fieldset className="form-check fs-4">
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="mePersonally"
+            {...register("mePersonally", {})}
+          />
+          <label className="form-check-label " for="mePersonally">
+            Me Personally
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="myChildren"
+            {...register("myChildren", {})}
+          />
+
+          <label className="form-check-label" for="myChildren">
+            My Children
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="myRelatives"
+            {...register("myRelatives", {})}
+          />
+          <label className="form-check-label" for="myRelatives">
+            My Relatives
+          </label>
+        </div>
         <input
-          type="checkbox"
-          placeholder="mePersonally"
-          {...register("mePersonally", {})}
-        />
-        <label for="mePersonally">Me Personally</label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="myChildren"
-          {...register("myChildren", {})}
-        />
-        <label for="myChildren">My Children</label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="myRelatives"
-          {...register("myRelatives", {})}
-        />
-        <label for="myRelatives">My Relatives</label>
-        <br />
-        <input
+          className="form-check-input"
           type="checkbox"
           placeholder="myFriends"
           {...register("myFriends", {})}
         />
-        <label for="myFriends">My friends</label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="myColleagues"
-          {...register("myColleagues", {})}
-        />
-        <label for="myColleagues">My Colleagues</label>
-        <br />
+        <label className="form-check-label" for="myFriends">
+          My friends
+        </label>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="myColleagues"
+            {...register("myColleagues", {})}
+          />
+          <label className="form-check-label" for="myColleagues">
+            My Colleagues
+          </label>
+        </div>
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
