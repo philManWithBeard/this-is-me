@@ -68,7 +68,17 @@ margin-bottom: 20px;
     font-family: monospace;
   }
   
- 
+ .text-center {
+  font-family: monospace;
+ }
+
+ .custom-bg-light-sage {
+  background-color: #D9D9D9; /* Light Sage for footer */
+}
+
+.custom-text-color-pink {
+    color: #D28E7E; /* Light pink for footer */
+}
 
 
 
