@@ -6,13 +6,13 @@ import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import { Input } from "../Components/Forms/Input";
+import Question from "../Components/Layout/Question";
 
 const Postcode = () => {
   const [state, setState] = useAppState();
   const {
     handleSubmit,
     register,
-    watch,
     formState: { errors },
   } = useForm({ defaultValues: state, mode: "onSubmit" });
   const navigate = useNavigate();
@@ -24,9 +24,9 @@ const Postcode = () => {
 
   return (
     <Form onSubmit={handleSubmit(saveData)}>
-      <h2>
-        There's a housing crisis. <br /> Let's show your MP how bad it is.{" "}
-      </h2>
+      <Question>
+        There's a housing crisis. <br /> Let's show your MP how bad it is.
+      </Question>
       <fieldset>
         <Field label="Postcode" error={errors?.postcode}>
           <Input

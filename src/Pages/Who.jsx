@@ -6,7 +6,7 @@ import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import { Input } from "../Components/Forms/Input";
-import beForm from "react-bootstrap/Form";
+import Question from "../Components/Layout/Question";
 
 const Who = () => {
   const [state, setState] = useAppState();
@@ -14,10 +14,8 @@ const Who = () => {
   const {
     handleSubmit,
     register,
-    watch,
     formState: { errors },
   } = useForm({ defaultValues: state, mode: "onSubmit" });
-  const watchPassword = watch("password");
   const navigate = useNavigate();
 
   const saveData = (data) => {
@@ -26,23 +24,63 @@ const Who = () => {
   };
   
   return (
-    <div style={{display: 'flex', alignItems: 'center', minHeight: '100vh', minWidth: '100vw'}}>
-<Form onSubmit={handleSubmit(saveData)}> 
-      <h2>Who does this issue affect?</h2>
-      <fieldset>
-        {["My Physical Health", "My Mental Health", "My ability to afford essentials", "My ability to afford non-essentials"].map(
-          (answer, index) => (
-            <div key={`default-${index}`} className="mb-3">
-              <beForm.Check // prettier-ignore
-                type="radio"
-                id={`default-${index}`}
-                label={answer}
-                name = "group1"
-            
-              />
-            </div>
-          )
-        )}
+    <Form onSubmit={handleSubmit(saveData)}>
+      <Question>Who does this issue affect?</Question>
+      <fieldset className="form-check fs-4">
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="mePersonally"
+            {...register("mePersonally", {})}
+          />
+          <label className="form-check-label " for="mePersonally">
+            Me Personally
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="myChildren"
+            {...register("myChildren", {})}
+          />
+
+          <label className="form-check-label" for="myChildren">
+            My Children
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="myRelatives"
+            {...register("myRelatives", {})}
+          />
+          <label className="form-check-label" for="myRelatives">
+            My Relatives
+          </label>
+        </div>
+        <input
+          className="form-check-input"
+          type="checkbox"
+          placeholder="myFriends"
+          {...register("myFriends", {})}
+        />
+        <label className="form-check-label" for="myFriends">
+          My friends
+        </label>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="myColleagues"
+            {...register("myColleagues", {})}
+          />
+          <label className="form-check-label" for="myColleagues">
+            My Colleagues
+          </label>
+        </div>
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
