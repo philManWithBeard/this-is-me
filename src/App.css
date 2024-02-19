@@ -22,3 +22,8 @@ footer {
     font-weight: 600;
     font-family: 'Cabin Variable', sans-serif;
 }
+
+.btn {
+    background-color: #182F53;
+    border-style: none;
+}
