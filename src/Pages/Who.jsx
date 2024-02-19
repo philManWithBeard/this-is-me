@@ -22,7 +22,7 @@ const Who = () => {
     setState({ ...state, ...data });
     navigate("/life");
   };
-  
+
   return (
     <Form onSubmit={handleSubmit(saveData)}>
       <Question>Who does this issue affect?</Question>
@@ -84,8 +84,6 @@ const Who = () => {
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
-    </div>
-    
   );
 };
 
