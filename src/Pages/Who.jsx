@@ -10,6 +10,7 @@ import beForm from "react-bootstrap/Form";
 
 const Who = () => {
   const [state, setState] = useAppState();
+
   const {
     handleSubmit,
     register,
@@ -23,9 +24,10 @@ const Who = () => {
     setState({ ...state, ...data });
     navigate("/life");
   };
-
+  
   return (
-    <Form onSubmit={handleSubmit(saveData)}>
+    <div style={{display: 'flex', alignItems: 'center', minHeight: '100vh', minWidth: '100vw'}}>
+<Form onSubmit={handleSubmit(saveData)}> 
       <h2>Who does this issue affect?</h2>
       <fieldset>
         {["My Physical Health", "My Mental Health", "My ability to afford essentials", "My ability to afford non-essentials"].map(
@@ -35,6 +37,8 @@ const Who = () => {
                 type="radio"
                 id={`default-${index}`}
                 label={answer}
+                name = "group1"
+            
               />
             </div>
           )
@@ -42,6 +46,8 @@ const Who = () => {
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
+    </div>
+    
   );
 };
 
