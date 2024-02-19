@@ -6,7 +6,7 @@ const Footer = () => {
  return (
     <>
         <footer className="custom-bg-light-sage pt-5">
-            <h7 className="text-dark fst-italic  d-flex align-items-center justify-content-center">©2024 We Are Us</h7>
+            <h7 className="text-dark fst-italic  d-flex align-items-center justify-content-center">Made with ❤️ by We Are Four</h7>
         </footer>
     </>
  )   

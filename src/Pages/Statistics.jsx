@@ -6,6 +6,7 @@ import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import { Input } from "../Components/Forms/Input";
+import Question from "../Components/Layout/Question";
 
 const Statistics = () => {
   const [state, setState] = useAppState();
@@ -24,7 +25,7 @@ const Statistics = () => {
 
   return (
     <Form onSubmit={handleSubmit(saveData)}>
-      <h2>Sam's Fancy Statistics for {state.postcode}</h2>
+      <Question>Sam's Fancy Statistics for {state.postcode}</Question>
       <fieldset>
         <Button>Next {">"}</Button>
       </fieldset>
