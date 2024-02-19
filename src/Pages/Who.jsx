@@ -5,7 +5,7 @@ import { useAppState } from "../Components/state";
 import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
-import { Input } from "../Components/Forms/Input";
+import CheckboxInput from "../Components/Forms/CheckboxInput";
 import Question from "../Components/Layout/Question";
 
 const Who = () => {
@@ -34,7 +34,7 @@ const Who = () => {
             placeholder="mePersonally"
             {...register("mePersonally", {})}
           />
-          <label className="form-check-label " for="mePersonally">
+          <label className="form-check-label" htmlFor="mePersonally">
             Me Personally
           </label>
         </div>
@@ -46,7 +46,7 @@ const Who = () => {
             {...register("myChildren", {})}
           />
 
-          <label className="form-check-label" for="myChildren">
+          <label className="form-check-label" htmlFor="myChildren">
             My Children
           </label>
         </div>
@@ -57,7 +57,7 @@ const Who = () => {
             placeholder="myRelatives"
             {...register("myRelatives", {})}
           />
-          <label className="form-check-label" for="myRelatives">
+          <label className="form-check-label" htmlFor="myRelatives">
             My Relatives
           </label>
         </div>
@@ -67,7 +67,7 @@ const Who = () => {
           placeholder="myFriends"
           {...register("myFriends", {})}
         />
-        <label className="form-check-label" for="myFriends">
+        <label className="form-check-label" htmlFor="myFriends">
           My friends
         </label>
         <div>
@@ -77,7 +77,7 @@ const Who = () => {
             placeholder="myColleagues"
             {...register("myColleagues", {})}
           />
-          <label className="form-check-label" for="myColleagues">
+          <label className="form-check-label" htmlFor="myColleagues">
             My Colleagues
           </label>
         </div>
