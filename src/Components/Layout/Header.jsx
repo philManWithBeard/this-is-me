@@ -1,11 +1,17 @@
 import React from "react";
+import { Form, Button } from "react-bootstrap";
+import '../../index.css';
+
 
 const Header = () => {
-  return (
-    <header class="text-center p-2">
-      <h1 class="fw-bolder">THIS-IS-ME</h1>
+ return (
+    <>
+    <header className="bg-dark text-center custom-text-color-pink p-4">
+        <h1 className="fw-bolder fst-italic">THIS-IS-ME</h1>
     </header>
-  );
-};
+  
+    </>
+ )   
+}
 
 export default Header;
