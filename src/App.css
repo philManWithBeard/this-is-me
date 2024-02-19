@@ -27,3 +27,11 @@ footer {
     background-color: #182F53;
     border-style: none;
 }
+
+.form-check-input[type=checkbox] {
+    border-color: #545454;
+}
+
+.form-check-input:checked[type=checkbox] {
+    background-color: #D28E7E;
+}
