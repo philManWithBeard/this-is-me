@@ -1,20 +1,41 @@
 import { useForm } from "react-hook-form";
 import { useAppState } from "../Components/state";
 import { Section, SectionRow } from "../Components/Forms/Section";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import Layout from "../Components/Layout/Layout";
+
+// Endpoint to post details to
+const FORM_ENDPOINT =
+  "https://public.herotofu.com/v1/638bf550-d028-11ee-bb69-515451de93af";
 
 const Confirmation = () => {
   const [state] = useAppState();
   const { handleSubmit } = useForm({ defaultValues: state });
 
+  const navigate = useNavigate();
+
   const submitData = (data) => {
     console.info(data);
     // Submit data to the server
+
+    fetch(FORM_ENDPOINT, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((response) => {
+      if (!response.ok) {
+        throw new Error("Form response was not ok");
+      }
+
+      navigate("/thank-you");
+    });
   };
 
-  console.log(state);
   return (
     <Form onSubmit={handleSubmit(submitData)}>
       <h1 className="mb-4">Confirm</h1>
