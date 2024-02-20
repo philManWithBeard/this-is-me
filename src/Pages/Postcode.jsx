@@ -35,7 +35,7 @@ const Postcode = () => {
             id="postcode"
           />
         </Field>
-        <Button>Next {">"}</Button>
+        <Button >Next {">"}</Button>
       </fieldset>
     </Form>
   );
