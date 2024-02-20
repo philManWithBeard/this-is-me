@@ -27,39 +27,51 @@ const Life = () => {
   return (
     <Form onSubmit={handleSubmit(saveData)}>
       <Question>What does this affect?</Question>
-      <fieldset>
-        <input
-          type="checkbox"
-          placeholder="physicalHealth"
-          {...register("physicalHealth", {})}
-        />
-        <label htmlFor="physicalHealth">My physical health</label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="mentalHealth"
-          {...register("mentalHealth", {})}
-        />
-        <label htmlFor="mentalHealth">My mental health</label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="affordEssentials"
-          {...register("affordEssentials", {})}
-        />
-        <label htmlFor="affordEssentials">
-          My ability to afford essentials
-        </label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="nonEssentials"
-          {...register("nonEssentials", {})}
-        />
-        <label htmlFor="nonEssentials">
-          My ability to afford non-essentials
-        </label>
-        <br />
+      <fieldset className="form-check fs-4">
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="physicalHealth"
+            {...register("physicalHealth", {})}
+          />
+          <label className="form-check-label" htmlFor="physicalHealth">
+            My physical health
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="mentalHealth"
+            {...register("mentalHealth", {})}
+          />
+          <label className="form-check-label" htmlFor="mentalHealth">
+            My mental health
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="affordEssentials"
+            {...register("affordEssentials", {})}
+          />
+          <label className="form-check-label" htmlFor="affordEssentials">
+            My ability to afford essentials
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="nonEssentials"
+            {...register("nonEssentials", {})}
+          />
+          <label className="form-check-label" htmlFor="nonEssentials">
+            My ability to afford non-essentials
+          </label>
+        </div>
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
