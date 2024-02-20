@@ -77,5 +77,10 @@ margin-bottom: 20px;
 }
 
 .custom-text-color-pink {
-    color: #D28E7E; /* Light pink for footer */
+    color: #D28E7E; /* Light pink for header */
+}
+
+.custom-button:hover {
+  background-color: #D28E7E; 
+  color: white;
 }
