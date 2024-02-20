@@ -12,6 +12,7 @@ import { DonutDatasetTransition } from "../Components/Chart/DonutDatasetTransiti
 import API from "../utils/API";
 import Sanity from "../utils/Sanity";
 
+
 const Statistics = () => {
   const [state, setState] = useAppState();
   const {
@@ -64,8 +65,6 @@ const Statistics = () => {
     <p>Select period:</p>
     <DonutDatasetTransition width={800} height={300}/>
     <Form onSubmit={handleSubmit(saveData)}>
-      
-      <fieldset>
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>

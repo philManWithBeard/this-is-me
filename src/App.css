@@ -1,0 +1,37 @@
+header {
+    background-color: #06281E;
+    color: #D28E7E;
+    font-style: italic;
+    font-family: 'Cabin Variable', sans-serif;
+}
+
+body {
+    background-color: #ECE6DB;
+    font-family: 'Cabin Variable', sans-serif;
+}
+
+main {
+    color: #545454;
+    font-family: 'Cabin Variable', sans-serif;
+}
+
+footer {
+    background-color: #D9D9D9;
+    color: #545454;
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'Cabin Variable', sans-serif;
+}
+
+.btn {
+    background-color: #182F53;
+    border-style: none;
+}
+
+.form-check-input[type=checkbox] {
+    border-color: #545454;
+}
+
+.form-check-input:checked[type=checkbox] {
+    background-color: #D28E7E;
+}

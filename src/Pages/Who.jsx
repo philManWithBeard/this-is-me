@@ -6,16 +6,16 @@ import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import { Input } from "../Components/Forms/Input";
+import Question from "../Components/Layout/Question";
 
 const Who = () => {
   const [state, setState] = useAppState();
+
   const {
     handleSubmit,
     register,
-    watch,
     formState: { errors },
   } = useForm({ defaultValues: state, mode: "onSubmit" });
-  const watchPassword = watch("password");
   const navigate = useNavigate();
 
   const saveData = (data) => {
@@ -25,8 +25,62 @@ const Who = () => {
 
   return (
     <Form onSubmit={handleSubmit(saveData)}>
-      <h2>Who does this issue affect?</h2>
-      <fieldset>
+      <Question>Who does this issue affect?</Question>
+      <fieldset className="form-check fs-4">
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="mePersonally"
+            {...register("mePersonally", {})}
+          />
+          <label className="form-check-label " for="mePersonally">
+            Me Personally
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="myChildren"
+            {...register("myChildren", {})}
+          />
+
+          <label className="form-check-label" for="myChildren">
+            My Children
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="myRelatives"
+            {...register("myRelatives", {})}
+          />
+          <label className="form-check-label" for="myRelatives">
+            My Relatives
+          </label>
+        </div>
+        <input
+          className="form-check-input"
+          type="checkbox"
+          placeholder="myFriends"
+          {...register("myFriends", {})}
+        />
+        <label className="form-check-label" for="myFriends">
+          My friends
+        </label>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="myColleagues"
+            {...register("myColleagues", {})}
+          />
+          <label className="form-check-label" for="myColleagues">
+            My Colleagues
+          </label>
+        </div>
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
