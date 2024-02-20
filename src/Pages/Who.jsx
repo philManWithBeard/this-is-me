@@ -35,7 +35,7 @@ const Who = () => {
             {...register("mePersonally", {})}
           />
           <label className="form-check-label" htmlFor="mePersonally">
-            Me Personally
+            Me personally
           </label>
         </div>
         <div>
@@ -47,7 +47,7 @@ const Who = () => {
           />
 
           <label className="form-check-label" htmlFor="myChildren">
-            My Children
+            My children
           </label>
         </div>
         <div>
@@ -58,7 +58,7 @@ const Who = () => {
             {...register("myRelatives", {})}
           />
           <label className="form-check-label" htmlFor="myRelatives">
-            My Relatives
+            My relatives
           </label>
         </div>
         <input
@@ -78,7 +78,7 @@ const Who = () => {
             {...register("myColleagues", {})}
           />
           <label className="form-check-label" htmlFor="myColleagues">
-            My Colleagues
+            My colleagues
           </label>
         </div>
         <Button>Next {">"}</Button>

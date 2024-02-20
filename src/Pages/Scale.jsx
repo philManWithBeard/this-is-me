@@ -27,42 +27,62 @@ const Scale = () => {
   return (
     <Form onSubmit={handleSubmit(saveData)}>
       <Question>How much does this issue affect me?</Question>
-      <fieldset>
-        <input
-          type="checkbox"
-          placeholder="biggestIssue"
-          {...register("biggestIssue", {})}
-        />
-        <label htmlFor="biggestIssue">My biggest issue</label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="affectLot"
-          {...register("affectLot", {})}
-        />
-        <label htmlFor="affectLot">Affects me a lot</label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="affects"
-          {...register("affects", {})}
-        />
-        <label htmlFor="affects">Affects me</label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="affectLittle"
-          {...register("affectLittle", {})}
-        />
-        <label htmlFor="affectLittle">Affects me a little</label>
-        <br />
-        <input
-          type="checkbox"
-          placeholder="doesntAffect"
-          {...register("doesntAffect", {})}
-        />
-        <label htmlFor="doesntAffect">Doesn't affect me</label>
-        <br />
+      <fieldset className="form-check fs-4">
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="biggestIssue"
+            {...register("biggestIssue", {})}
+          />
+          <label className="form-check-label" htmlFor="biggestIssue">
+            My biggest issue
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="affectLot"
+            {...register("affectLot", {})}
+          />
+          <label className="form-check-label" htmlFor="affectLot">
+            Affects me a lot
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="affects"
+            {...register("affects", {})}
+          />
+          <label className="form-check-label" htmlFor="affects">
+            Affects me
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="affectLittle"
+            {...register("affectLittle", {})}
+          />
+          <label className="form-check-label" htmlFor="affectLittle">
+            Affects me a little
+          </label>
+        </div>
+        <div>
+          <input
+            className="form-check-input"
+            type="checkbox"
+            placeholder="doesntAffect"
+            {...register("doesntAffect", {})}
+          />
+          <label className="form-check-label" htmlFor="doesntAffect">
+            Doesn't affect me
+          </label>
+        </div>
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>
