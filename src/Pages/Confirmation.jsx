@@ -50,7 +50,7 @@ const Confirmation = () => {
           {state.myChildren ? <li>My children</li> : ""}
           {state.myRelatives ? <li>My relatives</li> : ""}
           {state.myFriends ? <li>My friends</li> : ""}
-          {state.myColleagues ? <li>My colleagues</li> : ""}.
+          {state.myColleagues ? <li>My colleagues</li> : ""}
         </ul>
       </Section>
       <Section url="/life">
