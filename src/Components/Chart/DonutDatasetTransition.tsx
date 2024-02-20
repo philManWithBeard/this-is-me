@@ -24,18 +24,19 @@ export const DonutDatasetTransition = ({
   width,
   height,
 }: DonutDatasetTransitionProps) => {
-  const [selectedData, setSelectedData] = useState(Data1);
+  const [selectedData, setSelectedData] = useState(Data2);
 
   return (
     <div>
       <div style={{ height: BUTTONS_HEIGHT }}>
         <button style={buttonStyle} onClick={() => setSelectedData(Data1)}>
-          Past: 2000
+          Past: 2003
         </button>
         <button style={buttonStyle} onClick={() => setSelectedData(Data2)}>
           Present: 2023
         </button>
       </div>
+      <p></p>
       <DonutChart
         width={width}
         height={height - BUTTONS_HEIGHT}
