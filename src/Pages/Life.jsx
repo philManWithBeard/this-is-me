@@ -33,28 +33,32 @@ const Life = () => {
           placeholder="physicalHealth"
           {...register("physicalHealth", {})}
         />
-        <label for="physicalHealth">My physical health</label>
+        <label htmlFor="physicalHealth">My physical health</label>
         <br />
         <input
           type="checkbox"
           placeholder="mentalHealth"
           {...register("mentalHealth", {})}
         />
-        <label for="mentalHealth">My mental health</label>
+        <label htmlFor="mentalHealth">My mental health</label>
         <br />
         <input
           type="checkbox"
           placeholder="affordEssentials"
           {...register("affordEssentials", {})}
         />
-        <label for="affordEssentials">My ability to afford essentials</label>
+        <label htmlFor="affordEssentials">
+          My ability to afford essentials
+        </label>
         <br />
         <input
           type="checkbox"
           placeholder="nonEssentials"
           {...register("nonEssentials", {})}
         />
-        <label for="nonEssentials">My ability to afford non-essentials</label>
+        <label htmlFor="nonEssentials">
+          My ability to afford non-essentials
+        </label>
         <br />
         <Button>Next {">"}</Button>
       </fieldset>

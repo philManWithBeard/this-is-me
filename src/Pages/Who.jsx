@@ -5,7 +5,7 @@ import { useAppState } from "../Components/state";
 import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
-import { Input } from "../Components/Forms/Input";
+import CheckboxInput from "../Components/Forms/CheckboxInput";
 import Question from "../Components/Layout/Question";
 
 const Who = () => {
@@ -34,8 +34,8 @@ const Who = () => {
             placeholder="mePersonally"
             {...register("mePersonally", {})}
           />
-          <label className="form-check-label " for="mePersonally">
-            Me Personally
+          <label className="form-check-label" htmlFor="mePersonally">
+            Me personally
           </label>
         </div>
         <div>
@@ -46,8 +46,8 @@ const Who = () => {
             {...register("myChildren", {})}
           />
 
-          <label className="form-check-label" for="myChildren">
-            My Children
+          <label className="form-check-label" htmlFor="myChildren">
+            My children
           </label>
         </div>
         <div>
@@ -57,8 +57,8 @@ const Who = () => {
             placeholder="myRelatives"
             {...register("myRelatives", {})}
           />
-          <label className="form-check-label" for="myRelatives">
-            My Relatives
+          <label className="form-check-label" htmlFor="myRelatives">
+            My relatives
           </label>
         </div>
         <input
@@ -67,7 +67,7 @@ const Who = () => {
           placeholder="myFriends"
           {...register("myFriends", {})}
         />
-        <label className="form-check-label" for="myFriends">
+        <label className="form-check-label" htmlFor="myFriends">
           My friends
         </label>
         <div>
@@ -77,8 +77,8 @@ const Who = () => {
             placeholder="myColleagues"
             {...register("myColleagues", {})}
           />
-          <label className="form-check-label" for="myColleagues">
-            My Colleagues
+          <label className="form-check-label" htmlFor="myColleagues">
+            My colleagues
           </label>
         </div>
         <Button>Next {">"}</Button>

@@ -11,7 +11,11 @@ export const Button = forwardRef(
     }));
 
     return (
-      <button className={`btn btn-${variant}`} {...props} ref={buttonRef}>
+      <button
+        className={`btn btn-lg  btn-${variant} mt-3`}
+        {...props}
+        ref={buttonRef}
+      >
         {children}
       </button>
     );
