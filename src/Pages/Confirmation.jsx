@@ -14,6 +14,7 @@ const Confirmation = () => {
     // Submit data to the server
   };
 
+  console.log(state);
   return (
     <Form onSubmit={handleSubmit(submitData)}>
       <h1 className="mb-4">Confirm</h1>
@@ -26,9 +27,9 @@ const Confirmation = () => {
         <ul>
           {state.mePersonally ? <li>Me personally</li> : ""}
           {state.myChildren ? <li>My children</li> : ""}
-          {state.mePersonally ? <li>My relatives</li> : ""}
-          {state.mePersonally ? <li>My friends</li> : ""}
-          {state.mePersonally ? <li>My colleagues</li> : ""}.
+          {state.myRelatives ? <li>My relatives</li> : ""}
+          {state.myFriends ? <li>My friends</li> : ""}
+          {state.myColleagues ? <li>My colleagues</li> : ""}.
         </ul>
       </Section>
       <Section url="/life">
@@ -36,12 +37,12 @@ const Confirmation = () => {
         <ul>
           {state.mentalHealth ? <li>Mental health</li> : ""}
           {state.physicalHealth ? <li>Physical health"</li> : ""}
-          {state.mePersonally ? (
+          {state.affordEssentials ? (
             <li>Ability to afford essentials like heating and eating</li>
           ) : (
             ""
           )}
-          {state.mePersonally ? (
+          {state.nonEssentials ? (
             <li>
               Ability to afford non essentials like meeting friends and
               socialising
@@ -54,7 +55,7 @@ const Confirmation = () => {
       <Section url="/scale">
         <p>
           This issue
-          {state.biggest ? "is my biggest issue" : ""}
+          {state.biggestIssue ? " is my biggest issue" : ""}
           {state.affectLot ? " affects me a lot" : ""}
           {state.affects ? " affects me" : ""}
           {state.affectLittle ? " affects me a little" : ""}
