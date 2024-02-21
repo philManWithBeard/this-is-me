@@ -5,6 +5,7 @@ import { useAppState } from "../Components/state";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import Question from "../Components/Layout/Question";
+import CheckboxInput from "../Components/Forms/CheckboxInput";
 
 const Life = () => {
   // use custom AppState hook to set state for all pages
