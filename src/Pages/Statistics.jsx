@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import { set, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useAppState } from "../Components/state";
-import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
-import { Input } from "../Components/Forms/Input";
 import { Data1 } from "../Components/Chart/Data/data1";
 import { Data2 } from "../Components/Chart/Data/data2";
 import { DonutDatasetTransition } from "../Components/Chart/DonutDatasetTransition";

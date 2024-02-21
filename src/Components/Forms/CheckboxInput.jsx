@@ -1,14 +1,16 @@
 import React from "react";
 
-const CheckboxInput = ({ children }, placeholder) => {
+const CheckboxInput = ({ children, register, placeholder }) => {
   return (
     <>
       <input
         type="checkbox"
-        placeholder={placeholder}
+        className="form-check-input"
         {...register(placeholder, {})}
       />
-      <label for={placeholder}>{children}</label>
+      <label htmlFor={placeholder} className="form-check-label">
+        {children}
+      </label>
       <br />
     </>
   );

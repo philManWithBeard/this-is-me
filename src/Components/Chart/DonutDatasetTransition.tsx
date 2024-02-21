@@ -2,7 +2,6 @@ import { useState } from "react";
 import {Data1}  from "./Data/data1.tsx";
 import {Data2} from "./Data/data2.tsx";
 import { DonutChart } from "./DonutChart.tsx";
-import "../../index.css"
 const BUTTONS_HEIGHT = 50;
 
 type DonutDatasetTransitionProps = {
