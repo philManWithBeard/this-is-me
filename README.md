@@ -5,6 +5,8 @@
 “I want my MP to know how many of their constituents are getting priced out of housing each year!”
 We are Introducing THIS IS ME - Empowering Advocacy for Affordable Housing app. Our web app provides a dynamic visualisation of past house prices and average annual pay increases within counties. With data-driven insights, constituents can email the urgency of affordable housing to local MPs directly from our app. Join us in activating the change for our community's future.
 
+Invoke Narratives, Shape Votes: My Story, My Influence – Where Seeing is Believing.
+
 You can view a live demo over at https://main--we-are-many-this-is-me.netlify.app/
 ![this-is-me-screenshoot](./public/homepage.png)
 
