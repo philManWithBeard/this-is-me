@@ -1,3 +1,5 @@
+/* Only to be used when Bootstrap Utility Classes are unavailable */
+
 header {
     background-color: #06281E;
     color: #D28E7E;
