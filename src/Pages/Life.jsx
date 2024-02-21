@@ -2,23 +2,25 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useAppState } from "../Components/state";
-import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
-import { Input } from "../Components/Forms/Input";
 import Question from "../Components/Layout/Question";
 
 const Life = () => {
+  // use custom AppState hook to set state for all pages
   const [state, setState] = useAppState();
+
+  // use React Hook Form to handle form
   const {
     handleSubmit,
     register,
-    watch,
     formState: { errors },
   } = useForm({ defaultValues: state, mode: "onSubmit" });
-  const watchPassword = watch("password");
+
+  // use React Router to navigate
   const navigate = useNavigate();
 
+  // set state and navigate to next page
   const saveData = (data) => {
     setState({ ...state, ...data });
     navigate("/scale");
@@ -33,6 +35,7 @@ const Life = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="physicalHealth"
+            // register form field with react-hook-form
             {...register("physicalHealth", {})}
           />
           <label className="form-check-label" htmlFor="physicalHealth">
@@ -44,6 +47,7 @@ const Life = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="mentalHealth"
+            // register form field with react-hook-form
             {...register("mentalHealth", {})}
           />
           <label className="form-check-label" htmlFor="mentalHealth">
@@ -55,6 +59,7 @@ const Life = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="affordEssentials"
+            // register form field with react-hook-form
             {...register("affordEssentials", {})}
           />
           <label className="form-check-label" htmlFor="affordEssentials">
@@ -66,6 +71,7 @@ const Life = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="nonEssentials"
+            // register form field with react-hook-form
             {...register("nonEssentials", {})}
           />
           <label className="form-check-label" htmlFor="nonEssentials">

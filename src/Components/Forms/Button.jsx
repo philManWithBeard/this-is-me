@@ -1,4 +1,4 @@
-import { forwardRef, useImperativeHandle, useRef } from "react";
+import React, { forwardRef, useImperativeHandle, useRef } from "react";
 
 export const Button = forwardRef(
   ({ children, variant = "primary", ...props }, ref) => {
@@ -12,7 +12,7 @@ export const Button = forwardRef(
 
     return (
       <button
-        className={`btn btn-lg  btn-${variant} mt-3`}
+        className={`btn btn-lg btn-${variant} mt-3 custom-button`}
         {...props}
         ref={buttonRef}
       >

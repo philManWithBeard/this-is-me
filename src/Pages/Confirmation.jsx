@@ -1,20 +1,44 @@
 import { useForm } from "react-hook-form";
 import { useAppState } from "../Components/state";
 import { Section, SectionRow } from "../Components/Forms/Section";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import Layout from "../Components/Layout/Layout";
 
+// Endpoint to post details to
+const FORM_ENDPOINT =
+  "https://public.herotofu.com/v1/638bf550-d028-11ee-bb69-515451de93af";
+
 const Confirmation = () => {
+  // use custom AppState hook to get state for all pages
   const [state] = useAppState();
+
+  // use React Hook Form to handle form
   const { handleSubmit } = useForm({ defaultValues: state });
 
+  // use React Router to navigate
+  const navigate = useNavigate();
+
+  // submit data
   const submitData = (data) => {
-    console.info(data);
-    // Submit data to the server
+    // Use POST to send to form to herotofu
+    fetch(FORM_ENDPOINT, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((response) => {
+      if (!response.ok) {
+        throw new Error("Form response was not ok");
+      }
+
+      navigate("/thank-you");
+    });
   };
 
-  console.log(state);
   return (
     <Form onSubmit={handleSubmit(submitData)}>
       <h1 className="mb-4">Confirm</h1>
@@ -29,7 +53,7 @@ const Confirmation = () => {
           {state.myChildren ? <li>My children</li> : ""}
           {state.myRelatives ? <li>My relatives</li> : ""}
           {state.myFriends ? <li>My friends</li> : ""}
-          {state.myColleagues ? <li>My colleagues</li> : ""}.
+          {state.myColleagues ? <li>My colleagues</li> : ""}
         </ul>
       </Section>
       <Section url="/life">

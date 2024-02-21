@@ -2,22 +2,25 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useAppState } from "../Components/state";
-import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
-import CheckboxInput from "../Components/Forms/CheckboxInput";
 import Question from "../Components/Layout/Question";
 
 const Who = () => {
+  // use custom AppState hook to set state for all pages
   const [state, setState] = useAppState();
 
+  // use React Hook Form to handle form
   const {
     handleSubmit,
     register,
     formState: { errors },
   } = useForm({ defaultValues: state, mode: "onSubmit" });
+
+  // use React Router to navigate
   const navigate = useNavigate();
 
+  // set state and navigate to next page
   const saveData = (data) => {
     setState({ ...state, ...data });
     navigate("/life");
@@ -32,6 +35,7 @@ const Who = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="mePersonally"
+            // register form field with react-hook-form
             {...register("mePersonally", {})}
           />
           <label className="form-check-label" htmlFor="mePersonally">
@@ -43,6 +47,7 @@ const Who = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="myChildren"
+            // register form field with react-hook-form
             {...register("myChildren", {})}
           />
 
@@ -55,6 +60,7 @@ const Who = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="myRelatives"
+            // register form field with react-hook-form
             {...register("myRelatives", {})}
           />
           <label className="form-check-label" htmlFor="myRelatives">
@@ -65,6 +71,7 @@ const Who = () => {
           className="form-check-input"
           type="checkbox"
           placeholder="myFriends"
+          // register form field with react-hook-form
           {...register("myFriends", {})}
         />
         <label className="form-check-label" htmlFor="myFriends">
@@ -75,6 +82,7 @@ const Who = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="myColleagues"
+            // register form field with react-hook-form
             {...register("myColleagues", {})}
           />
           <label className="form-check-label" htmlFor="myColleagues">

@@ -12,8 +12,11 @@ import ThankYou from "./Pages/ThankYou";
 const App = () => {
   return (
     <div className="App">
+      {/* // Component keeps state between pages/routes for multi-step form */}
       <AppProvider>
+        {/* // Sets up router */}
         <Router>
+          {/* // List of Routes */}
           <Routes>
             <Route path="/" element={<Postcode />} />
             <Route path="/statistics" element={<Statistics />} />
