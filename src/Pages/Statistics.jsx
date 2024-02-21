@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useAppState } from "../Components/state";
 import { Field } from "../Components/Forms/Field";
@@ -9,6 +9,7 @@ import { Input } from "../Components/Forms/Input";
 import { Data1 } from "../Components/Chart/Data/data1";
 import { Data2 } from "../Components/Chart/Data/data2";
 import { DonutDatasetTransition } from "../Components/Chart/DonutDatasetTransition";
+import Stats from "../Components/Chart/Data/stats";
 import API from "../utils/API";
 import Sanity from "../utils/Sanity";
 
@@ -27,12 +28,15 @@ const Statistics = () => {
     navigate("/who");
   };
 
+  let pastXArr =[];
+  let presXArr = [];
   const searchPostcode = (query) => {
     API.search(query).then((response) => {
       const ftpData = response.data;
       const laua = ftpData.data.attributes.laua;
       console.log(laua);
-      Sanity.sanitySearch(laua).then((response2) => {
+      Sanity.sanitySearch(laua).then((response2) => { 
+        
         const sanityData = response2.data;
         const sData = JSON.stringify(sanityData);
         const sanData = JSON.parse(sData);
@@ -57,23 +61,49 @@ const Statistics = () => {
           name: "Past Price",
           value: sanData.result[21].housePrice,
         });
+
+
+        let pastCalc = sanData.result[1].housePrice / sanData.result[1].meanAnnualPay
+        let presCalc = sanData.result[21].housePrice / sanData.result[21].meanAnnualPay
+        console.log("calc: " + pastCalc);
+        if (pastXArr.length > 0){
+          pastXArr.pop();
+        }
+        pastXArr.push(pastCalc.toFixed(0));
+        if (presXArr.length > 0){
+          presXArr.pop();
+        }
+        presXArr.push(presCalc.toFixed(0)
+        )
+      
+
+      
       });
+      
     });
   };
 
+
   const postcode = state.postcode;
 
-  searchPostcode(postcode);
+  const disPostcode = postcode.toUpperCase();
+
+  searchPostcode(postcode)
 
   return (
-    <>
-      <h2>Sam's Fancy Statistics for {state.postcode}</h2>
-      <p>Select period:</p>
-      <DonutDatasetTransition width={800} height={300} />
+    <section>
+      <h2>Salary vs House Price for {disPostcode}</h2>
+      <p id="select">Select period:</p>
+      <DonutDatasetTransition width={300} height={300} />
+      
+      <Stats
+      pastX={pastXArr}
+      presentX={presXArr}
+      />
       <Form onSubmit={handleSubmit(saveData)}>
         <Button>Next {">"}</Button>
       </Form>
-    </>
+    </section>
   );
 };
 

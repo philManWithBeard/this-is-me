@@ -79,3 +79,17 @@ margin-bottom: 20px;
 .custom-text-color-pink {
     color: #D28E7E; /* Light pink for footer */
 }
+
+#statButton{
+  background-color: #000000;
+  font-family: cabin variable;
+  
+  
+}
+#statButton:hover{
+  background-color: #313131;
+}
+#select{
+  font-size: 20px;
+  
+}
