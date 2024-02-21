@@ -2,13 +2,14 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-
+“I want my MP to know how many of their constituents are getting priced out of housing each year!”
+We are Introducing THIS IS ME - Empowering Advocacy for Affordable Housing app. Our web app provides a dynamic visualisation of past house prices and average annual pay increases within counties. With data-driven insights, constituents can email the urgency of affordable housing to local MPs directly from our app. Join us in activating the change for our community's future.
+A tool for citizens to visualise and act on the data on UK house costs against average UK salaries from the year 2000 to the present day. The charts will display the rising disparity between the two metrics very clearly - this then with a personalised contact form will let parliamentary member aware of the exact sentiment and data of their constituents on the topic of housing affordability.
 
 You can view a live demo over at https://main--we-are-many-this-is-me.netlify.app/
 ![screenshoot](./assets/imagereadme.png)
 
 ## Table of contents
-- [Installation](#installation)
 - [Usage](#usage)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
@@ -16,19 +17,18 @@ You can view a live demo over at https://main--we-are-many-this-is-me.netlify.ap
 - [Questions](#questions)
 - [Contact](#screenshot)
 
-## Installation
+## Usage
 To get the frontend running locally:
 Required [Node](https://nodejs.org/en/download/)
 
-- Clone this repo
+- Clone this repo:
 - `npm install` to install all req'd dependencies
-- `npm run dev` to start the local server (this project uses VITE v5.1.3)
+- `npm run dev` to start the local server (this project uses [VITE v5.1.3](https://vitejs.dev/))
 
 ```console
 git clone https://github.com/philManWithBeard/this-is-me
   ```
-
-## Usage 
+Open your browser and navigate to http://localhost:5173 to view the project.
 
 ## Creators
 We Are Us:
@@ -39,6 +39,7 @@ We Are Us:
 
 ## Acknowledgements
 - [React](https://react.dev/)
+D3.js, React Bootstrap, Sanity CMS, Herotofu, Members of Parliament, Find that postcode,ONS
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
 - [Netlify](https://www.netlify.com/)
 - [Eslint](https://eslint.org/)
