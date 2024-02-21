@@ -5,9 +5,7 @@
 “I want my MP to know how many of their constituents are getting priced out of housing each year!”
 We are Introducing THIS IS ME - Empowering Advocacy for Affordable Housing app. Our web app provides a dynamic visualisation of past house prices and average annual pay increases within counties. With data-driven insights, constituents can email the urgency of affordable housing to local MPs directly from our app. Join us in activating the change for our community's future.
 
-Invoke Narratives, Shape Votes: My Story, My Influence – Where Seeing is Believing.
-
-You can view a live demo over at https://main--we-are-many-this-is-me.netlify.app/
+You can view a live demo over at https://we-are-many-this-is-me.netlify.app/
 ![this-is-me-screenshoot](./public/homepage.png)
 
 ## Table of contents
@@ -32,7 +30,7 @@ git clone https://github.com/philManWithBeard/this-is-me
 Open your browser and navigate to http://localhost:5173 to view the project.
 
 ## Usage
-A tool for citizens to visualise and act on the data on UK house costs against average UK salaries from the year 2000 to the present day. The charts will display the rising disparity between the two metrics very clearly - this then, with a personalised contact form, will let parliamentary member be aware of the exact sentiment and data of their constituents on the topic of housing affordability.
+A tool for citizens to visualise and act on the data on UK house costs against average salaries in the area from the year 2000 to the present day. The charts will display the rising disparity between the two metrics very clearly - this then, with a personalised contact form, will let parliamentary member be aware of the exact sentiment and data of their constituents on the topic of housing affordability.
 
 ## Creators
 We Are Us:
@@ -43,7 +41,6 @@ We Are Us:
 
 ## Acknowledgements
 - [React](https://react.dev/)
-- [JSX](https://reactjs.org/docs/introducing-jsx.html)
 - [React Bootstrap](https://react-bootstrap.netlify.app/)
 - [D3](https://d3js.org/)
 - [Sanity CMS](https://www.sanity.io/developer-experience)
@@ -53,6 +50,7 @@ We Are Us:
 - [FindthatPostcode](https://findthatpostcode.uk/)
 - [Netlify](https://www.netlify.com/)
 - [Vite](https://vitejs.dev/)
+- [PageSpeed Insights](https://pagespeed.web.dev/)
 - [We Are Many](https://github.com/CestSamual/We-Are-Many)
 
 ## License
