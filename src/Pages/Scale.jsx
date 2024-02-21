@@ -2,23 +2,25 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useAppState } from "../Components/state";
-import { Field } from "../Components/Forms/Field";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
-import { Input } from "../Components/Forms/Input";
 import Question from "../Components/Layout/Question";
 
 const Scale = () => {
+  // use custom AppState hook to set state for all pages
   const [state, setState] = useAppState();
+
+  // use React Hook Form to handle form
   const {
     handleSubmit,
     register,
-    watch,
     formState: { errors },
   } = useForm({ defaultValues: state, mode: "onSubmit" });
-  const watchPassword = watch("password");
+
+  // use React Router to navigate
   const navigate = useNavigate();
 
+  // set state and navigate to next page
   const saveData = (data) => {
     setState({ ...state, ...data });
     navigate("/confirmation");
@@ -33,6 +35,7 @@ const Scale = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="biggestIssue"
+            // register form field with react-hook-form
             {...register("biggestIssue", {})}
           />
           <label className="form-check-label" htmlFor="biggestIssue">
@@ -44,6 +47,7 @@ const Scale = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="affectLot"
+            // register form field with react-hook-form
             {...register("affectLot", {})}
           />
           <label className="form-check-label" htmlFor="affectLot">
@@ -55,6 +59,7 @@ const Scale = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="affects"
+            // register form field with react-hook-form
             {...register("affects", {})}
           />
           <label className="form-check-label" htmlFor="affects">
@@ -66,6 +71,7 @@ const Scale = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="affectLittle"
+            // register form field with react-hook-form
             {...register("affectLittle", {})}
           />
           <label className="form-check-label" htmlFor="affectLittle">
@@ -77,6 +83,7 @@ const Scale = () => {
             className="form-check-input"
             type="checkbox"
             placeholder="doesntAffect"
+            // register form field with react-hook-form
             {...register("doesntAffect", {})}
           />
           <label className="form-check-label" htmlFor="doesntAffect">

@@ -11,15 +11,18 @@ const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/638bf550-d028-11ee-bb69-515451de93af";
 
 const Confirmation = () => {
+  // use custom AppState hook to get state for all pages
   const [state] = useAppState();
+
+  // use React Hook Form to handle form
   const { handleSubmit } = useForm({ defaultValues: state });
 
+  // use React Router to navigate
   const navigate = useNavigate();
 
+  // submit data
   const submitData = (data) => {
-    console.info(data);
-    // Submit data to the server
-
+    // Use POST to send to form to herotofu
     fetch(FORM_ENDPOINT, {
       method: "POST",
       headers: {
