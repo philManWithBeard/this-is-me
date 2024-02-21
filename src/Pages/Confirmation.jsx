@@ -43,7 +43,7 @@ const Confirmation = () => {
     <Form onSubmit={handleSubmit(submitData)}>
       <h1 className="mb-4">Confirm</h1>
       <Section url="/">
-        <p>Dear *insert MP*,</p>
+        <p>To my member of parliament,</p>
         <p>I am one of your constituents, my postcode is {state.postcode}.</p>
       </Section>
       <Section url="/who">
