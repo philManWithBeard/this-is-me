@@ -1,7 +1,7 @@
 # This-Is-Me
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
-  ## Description
+## Description
 “I want my MP to know how many of their constituents are getting priced out of housing each year!”
 We are Introducing THIS IS ME - Empowering Advocacy for Affordable Housing app. Our web app provides a dynamic visualisation of past house prices and average annual pay increases within counties. With data-driven insights, constituents can email the urgency of affordable housing to local MPs directly from our app. Join us in activating the change for our community's future.
 
@@ -17,7 +17,6 @@ You can view a live demo over at https://main--we-are-many-this-is-me.netlify.ap
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 - [Contributing](#contributing)
-- [Contact](#screenshot)
 
 ## Installation
 To get the frontend running locally:
@@ -49,10 +48,9 @@ We Are Us:
 - [D3](https://d3js.org/)
 - [Sanity CMS](https://www.sanity.io/developer-experience)
 - [Herotofu](https://herotofu.com/)
+- [Fontsource](https://fontsource.org/)
 - [MembersAPI](https://members-api.parliament.uk/index.html)
 - [FindthatPostcode](https://findthatpostcode.uk/)
-- [ONS](https://developer.ons.gov.uk/)
-- [Eslint](https://eslint.org/)
 - [Netlify](https://www.netlify.com/)
 - [Vite](https://vitejs.dev/)
 - [We Are Many](https://github.com/CestSamual/We-Are-Many)
@@ -64,7 +62,4 @@ Released under the [MIT License](https://github.com/jsxgraph/jsxgraph/blob/maste
 If you have any suggestions or improvements, feel free to open an [issue](https://github.com/philManWithBeard/this-is-me/issues) or create a [pull request](https://github.com/philManWithBeard/this-is-me/pulls). Contributions are welcome!
  If you have any questions or need help, don't hesitate to reach out. 
 
- ## Contact
-If you have any questions, feedback, or suggestions regarding the "This Is Me" project, feel free to reach out:
-- GitHub: [Philip Burrows](https://github.com/philManWithBeard/this-is-me)
 
