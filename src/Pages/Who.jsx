@@ -5,6 +5,7 @@ import { useAppState } from "../Components/state";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import Question from "../Components/Layout/Question";
+import CheckboxInput from "../Components/Forms/CheckboxInput";
 
 const Who = () => {
   // use custom AppState hook to set state for all pages
@@ -30,65 +31,21 @@ const Who = () => {
     <Form onSubmit={handleSubmit(saveData)}>
       <Question>Who does this issue affect?</Question>
       <fieldset className="form-check fs-4">
-        <div>
-          <input
-            className="form-check-input"
-            type="checkbox"
-            placeholder="mePersonally"
-            // register form field with react-hook-form
-            {...register("mePersonally", {})}
-          />
-          <label className="form-check-label" htmlFor="mePersonally">
-            Me personally
-          </label>
-        </div>
-        <div>
-          <input
-            className="form-check-input"
-            type="checkbox"
-            placeholder="myChildren"
-            // register form field with react-hook-form
-            {...register("myChildren", {})}
-          />
-
-          <label className="form-check-label" htmlFor="myChildren">
-            My children
-          </label>
-        </div>
-        <div>
-          <input
-            className="form-check-input"
-            type="checkbox"
-            placeholder="myRelatives"
-            // register form field with react-hook-form
-            {...register("myRelatives", {})}
-          />
-          <label className="form-check-label" htmlFor="myRelatives">
-            My relatives
-          </label>
-        </div>
-        <input
-          className="form-check-input"
-          type="checkbox"
-          placeholder="myFriends"
-          // register form field with react-hook-form
-          {...register("myFriends", {})}
-        />
-        <label className="form-check-label" htmlFor="myFriends">
+        <CheckboxInput register={register} placeholder="mePersonally">
+          Me personally
+        </CheckboxInput>
+        <CheckboxInput register={register} placeholder="myChildren">
+          My children
+        </CheckboxInput>
+        <CheckboxInput register={register} placeholder="myRelatives">
+          My relatives
+        </CheckboxInput>
+        <CheckboxInput register={register} placeholder="myFriends">
           My friends
-        </label>
-        <div>
-          <input
-            className="form-check-input"
-            type="checkbox"
-            placeholder="myColleagues"
-            // register form field with react-hook-form
-            {...register("myColleagues", {})}
-          />
-          <label className="form-check-label" htmlFor="myColleagues">
-            My colleagues
-          </label>
-        </div>
+        </CheckboxInput>
+        <CheckboxInput register={register} placeholder="myColleagues">
+          My colleagues
+        </CheckboxInput>
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>

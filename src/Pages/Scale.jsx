@@ -5,6 +5,7 @@ import { useAppState } from "../Components/state";
 import { Button } from "../Components/Forms/Button";
 import { Form } from "../Components/Forms/Form";
 import Question from "../Components/Layout/Question";
+import CheckboxInput from "../Components/Forms/CheckboxInput";
 
 const Scale = () => {
   // use custom AppState hook to set state for all pages
@@ -30,66 +31,21 @@ const Scale = () => {
     <Form onSubmit={handleSubmit(saveData)}>
       <Question>How much does this issue affect me?</Question>
       <fieldset className="form-check fs-4">
-        <div>
-          <input
-            className="form-check-input"
-            type="checkbox"
-            placeholder="biggestIssue"
-            // register form field with react-hook-form
-            {...register("biggestIssue", {})}
-          />
-          <label className="form-check-label" htmlFor="biggestIssue">
-            My biggest issue
-          </label>
-        </div>
-        <div>
-          <input
-            className="form-check-input"
-            type="checkbox"
-            placeholder="affectLot"
-            // register form field with react-hook-form
-            {...register("affectLot", {})}
-          />
-          <label className="form-check-label" htmlFor="affectLot">
-            Affects me a lot
-          </label>
-        </div>
-        <div>
-          <input
-            className="form-check-input"
-            type="checkbox"
-            placeholder="affects"
-            // register form field with react-hook-form
-            {...register("affects", {})}
-          />
-          <label className="form-check-label" htmlFor="affects">
-            Affects me
-          </label>
-        </div>
-        <div>
-          <input
-            className="form-check-input"
-            type="checkbox"
-            placeholder="affectLittle"
-            // register form field with react-hook-form
-            {...register("affectLittle", {})}
-          />
-          <label className="form-check-label" htmlFor="affectLittle">
-            Affects me a little
-          </label>
-        </div>
-        <div>
-          <input
-            className="form-check-input"
-            type="checkbox"
-            placeholder="doesntAffect"
-            // register form field with react-hook-form
-            {...register("doesntAffect", {})}
-          />
-          <label className="form-check-label" htmlFor="doesntAffect">
-            Doesn't affect me
-          </label>
-        </div>
+        <CheckboxInput register={register} placeholder="biggestIssue">
+          My biggest issue
+        </CheckboxInput>
+        <CheckboxInput register={register} placeholder="affectLot">
+          Affects me a lot
+        </CheckboxInput>
+        <CheckboxInput register={register} placeholder="affects">
+          Affects me
+        </CheckboxInput>
+        <CheckboxInput register={register} placeholder="affectLittle">
+          Affects me a little
+        </CheckboxInput>
+        <CheckboxInput register={register} placeholder="doesntAffect">
+          Doesn't affect me
+        </CheckboxInput>
         <Button>Next {">"}</Button>
       </fieldset>
     </Form>

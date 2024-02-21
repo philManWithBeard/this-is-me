@@ -1,4 +1,6 @@
 import React from "react";
+
+// brings in all css, fonts and layout components
 import Footer from "./Footer";
 import Header from "./Header";
 import "bootstrap/dist/css/bootstrap.css";
