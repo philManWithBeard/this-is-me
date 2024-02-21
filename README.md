@@ -39,10 +39,16 @@ We Are Us:
 
 ## Acknowledgements
 - [React](https://react.dev/)
-D3.js, React Bootstrap, Sanity CMS, Herotofu, Members of Parliament, Find that postcode,ONS
 - [JSX](https://reactjs.org/docs/introducing-jsx.html)
-- [Netlify](https://www.netlify.com/)
+- [React Bootstrap](https://react-bootstrap.netlify.app/)
+- [D3](https://d3js.org/)
+- [Sanity CMS](https://www.sanity.io/developer-experience)
+- [Herotofu](https://herotofu.com/)
+- [MembersAPI](https://members-api.parliament.uk/index.html)
+- [FindthatPostcode](https://findthatpostcode.uk/)
+- [ONS](https://developer.ons.gov.uk/)
 - [Eslint](https://eslint.org/)
+- [Netlify](https://www.netlify.com/)
 - [Vite](https://vitejs.dev/)
 - [We Are Many](https://github.com/CestSamual/We-Are-Many)
 
@@ -54,3 +60,6 @@ If you have any suggestions or improvements, feel free to open an [issue](https:
  If you have any questions or need help, don't hesitate to reach out. 
 
  ## Contact
+If you have any questions, feedback, or suggestions regarding the "This Is Me" project, feel free to reach out:
+- GitHub: [Philip Burrows](https://github.com/philManWithBeard/this-is-me)
+
